@@ -1,3 +1,22 @@
+pghoard (2.1.0a) unstable; urgency=low
+
+  * Support PostgreSQL 14
+
+  -- Tim Warberg <tim.warberg@optimere.com>  Mon, 25 Oct 2022 14:29:00 +0200
+
+pghoard (2.1.0) unstable; urgency=low
+
+  * Support for passing statistics to Prometheus
+  * Progress monitoring of basebackups
+  * Fix incompatibility with legacy PGHoard backups (2.0.0 was unable to
+    restore backups taken with much older versions)
+  * Compatibility improvements for different S3 api implementations
+  * Support for Zstandard (zstd) compression
+  * Support SFTP file storage
+  * File storage APIs (rohmu) support streaming
+
+  -- Oskari Saarenmaa <os@ohmu.fi>  Tue, 26 Jul 2016 18:48:03 +0300
+
 pghoard (1.4.0) unstable; urgency=low
 
   * Conflict with pgespresso < 1.2: older versions crash PostgreSQL
